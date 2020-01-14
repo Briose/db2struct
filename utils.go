@@ -11,18 +11,18 @@ import (
 // Constants for return types of golang
 const (
 	golangByteArray  = "[]byte"
-	gureguNullInt    = "null.Int"
+	gureguNullInt    = "zero.Int"
 	sqlNullInt       = "sql.NullInt64"
 	golangInt        = "int"
 	golangInt64      = "int64"
-	gureguNullFloat  = "null.Float"
+	gureguNullFloat  = "zero.Float"
 	sqlNullFloat     = "sql.NullFloat64"
 	golangFloat      = "float"
 	golangFloat32    = "float32"
 	golangFloat64    = "float64"
-	gureguNullString = "null.String"
+	gureguNullString = "zero.String"
 	sqlNullString    = "sql.NullString"
-	gureguNullTime   = "null.Time"
+	gureguNullTime   = "zero.Time"
 	golangTime       = "time.Time"
 )
 
