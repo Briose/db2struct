@@ -35,7 +35,7 @@ func init() {
 	goopt.Description = func() string {
 		return "Mariadb http Check"
 	}
-	goopt.Version = "0.0.2"
+	goopt.Version = "0.0.3"
 	goopt.Summary = "db2struct [-H] [-p] [-v] --package pkgName --struct structName --database databaseName --table tableName"
 
 	//Parse options
