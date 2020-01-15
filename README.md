@@ -1,10 +1,19 @@
 
-# 基于 db2struct [![Build Status](https://travis-ci.org/Shelnutt2/db2struct.svg?branch=master)](https://travis-ci.org/Shelnutt2/db2struct) 优化
+# 基于 db2struct 优化
 
 - 在 `guregu` 模式默认使用 `zero.String` `zero.Int` 等 来替换 `null.String` `null.Int` 等
 - 在json tag 中加入 `omitempty`
+- 自动引入依赖包
+   - `guregu` 模式 `import "gopkg.in/guregu/null.v3/zero"`
+   - `sql` 模式 `import "database/sql"`
 
-------------
+-----
+
+
+
+# 原 readme ：
+
+
 # db2struct [![Build Status](https://travis-ci.org/Shelnutt2/db2struct.svg?branch=master)](https://travis-ci.org/Shelnutt2/db2struct) [![Coverage Status](https://coveralls.io/repos/github/Shelnutt2/db2struct/badge.svg?branch=1-add-coveralls-support)](https://coveralls.io/github/Shelnutt2/db2struct?branch=1-add-coveralls-support) [![GoDoc](https://godoc.org/github.com/Shelnutt2/db2struct?status.svg)](https://godoc.org/github.com/Shelnutt2/db2struct)
 
 The db2struct package produces a usable golang struct from a given database table for use in a .go file.
