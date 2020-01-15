@@ -84,7 +84,7 @@ var Debug = false
 func Generate(columnTypes map[string]map[string]string, tableName string, structName string, pkgName string, jsonAnnotation bool, gormAnnotation bool, gureguTypes bool) ([]byte, error) {
 	var dbTypes string
 	dbTypes = generateMysqlTypes(columnTypes, 0, jsonAnnotation, gormAnnotation, gureguTypes)
-	imp := ""
+	imp := `import "database/sql"`
 	if gureguTypes {
 		imp = `import "gopkg.in/guregu/null.v3/zero"`
 	}
